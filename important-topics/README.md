@@ -84,13 +84,32 @@
 | 44 | [Translating Business Questions to Data Problems](44-translating-business-to-data-problems.md) | Very High |
 | 45 | [Presenting Insights & Data Storytelling](45-presenting-insights-and-data-storytelling.md) | High |
 
+### Advanced Topics (From Prachub 2,964-Question Scan)
+| # | Topic | Interview Weight |
+|---|-------|-----------------|
+| 46 | [Spark & Distributed Computing](46-spark-and-distributed-computing.md) | Very High |
+| 47 | [GenAI & LLM Applications in Analytics](47-genai-and-llm-applications-in-analytics.md) | High |
+| 48 | [Survival Analysis & Censored Data](48-survival-analysis-and-censored-data.md) | Medium-High |
+| 49 | [Attribution Modeling & Marketing Mix](49-attribution-modeling-and-marketing-mix.md) | Medium-High |
+| 50 | [Search & Ranking Systems](50-search-and-ranking-systems.md) | High |
+| 51 | [Anomaly Detection at Scale](51-anomaly-detection-at-scale.md) | High |
+| 52 | [Model Explainability & Interpretability (SHAP/LIME)](52-model-explainability-and-interpretability.md) | Very High |
+| 53 | [Responsible AI & ML Fairness](53-responsible-ai-and-ml-fairness.md) | High |
+| 54 | [Mixed-Effects & Hierarchical Models](54-mixed-effects-and-hierarchical-models.md) | Medium-High |
+| 55 | [Bootstrap Methods & Resampling](55-bootstrap-methods-and-resampling.md) | High |
+| 56 | [Linear Regression Deep Dive](56-linear-regression-deep-dive.md) | Very High |
+| 57 | [Marketplace & Two-Sided Experiment Design](57-marketplace-and-two-sided-experiment-design.md) | High |
+| 58 | [Heterogeneous Treatment Effects & Uplift Modeling](58-heterogeneous-treatment-effects-and-uplift-modeling.md) | Medium-High |
+| 59 | [Bayesian Decision-Making & Bandits](59-bayesian-decision-making-and-bandits.md) | Medium-High |
+| 60 | [Unit Economics & Business Case Analysis](60-unit-economics-and-business-case-analysis.md) | High |
+
 ---
 
 ## How to Use This
 
 ### Priority Order (if short on time)
-1. **Must-know** (Very High): Topics 01, 02, 06, 08, 09, 22-24, 36-37, 39, 44
-2. **Should-know** (High): Topics 03-05, 07, 10-12, 15-16, 18, 25-26, 29-32, 38, 41, 45
+1. **Must-know** (Very High): Topics 01, 02, 06, 08, 09, 22-24, 36-37, 39, 44, 46, 52, 56
+2. **Should-know** (High): Topics 03-05, 07, 10-12, 15-16, 18, 25-26, 29-32, 38, 41, 45, 47, 50-51, 53, 55, 57, 60
 3. **Good-to-know** (Medium): Everything else
 
 ### Mapping to SDE Interviews
