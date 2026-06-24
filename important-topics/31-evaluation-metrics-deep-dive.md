@@ -174,6 +174,15 @@ plt.legend()
 
 ### Log Loss (Cross-Entropy)
 
+**Formula:**
+```
+Log Loss = -1/N * Σ [yᵢ * log(pᵢ) + (1 - yᵢ) * log(1 - pᵢ)]
+```
+
+- Perfect predictions → Log Loss = 0
+- Confident wrong predictions → Log Loss → ∞
+- Random guessing (p=0.5) → Log Loss = 0.693
+
 ```python
 from sklearn.metrics import log_loss
 
@@ -183,6 +192,39 @@ ll = log_loss(y_true, y_proba)
 # Why it matters: a model that predicts P(fraud)=0.99 for a non-fraud
 # gets punished much more than one predicting P(fraud)=0.6
 # This incentivizes well-calibrated probabilities
+```
+
+### Lift Chart & Gain Chart
+
+**Lift** measures how much better your model is vs random selection:
+
+```
+Lift = (% of positives captured by model in top k%) / (k%)
+```
+
+| Decile | % Population | % Positives Captured | Lift |
+|--------|-------------|---------------------|------|
+| Top 10% | 10% | 45% | 4.5x |
+| Top 20% | 20% | 70% | 3.5x |
+| Top 50% | 50% | 92% | 1.84x |
+| All 100% | 100% | 100% | 1.0x |
+
+> **Interview Use**: "If we can only contact 20% of customers, our model captures 70% of churners — a 3.5x lift over random outreach."
+
+**Cumulative Gains Chart**: plots % positives captured (y-axis) vs % population scored (x-axis). Perfect model = step function. Random = diagonal.
+
+```python
+from sklearn.metrics import precision_recall_curve
+import numpy as np
+
+def lift_at_k(y_true, y_proba, k_pct=0.1):
+    """Compute lift at top k percent"""
+    n = len(y_true)
+    k = int(n * k_pct)
+    top_k_idx = np.argsort(y_proba)[::-1][:k]
+    positives_in_top_k = y_true[top_k_idx].sum()
+    expected_random = y_true.sum() * k_pct
+    return positives_in_top_k / expected_random
 ```
 
 ---

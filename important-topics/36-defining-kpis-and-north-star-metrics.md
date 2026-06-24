@@ -345,6 +345,43 @@ Developed by Google's UX research team, **HEART** provides a structured way to d
 
 ---
 
+## AARRR (Pirate Metrics) Framework
+
+The **AARRR framework** (Dave McClure) maps the entire user lifecycle into 5 stages — useful for growth-stage products and startups:
+
+| Stage | Question | Example Metric |
+|-------|----------|---------------|
+| **A**cquisition | How do users find us? | New signups, app installs, landing page visits |
+| **A**ctivation | Do they have a great first experience? | Completed onboarding, first action taken, "aha moment" reached |
+| **R**etention | Do they come back? | D7/D30 retention, WAU/MAU ratio |
+| **R**evenue | Do they pay? | Conversion to paid, ARPU, LTV |
+| **R**eferral | Do they tell others? | Invite sent, viral coefficient (k-factor) |
+
+### When to Use AARRR vs HEART
+
+| AARRR | HEART |
+|-------|-------|
+| Growth-stage products | Established products |
+| Full lifecycle view | Single feature evaluation |
+| Business outcomes focus | User experience focus |
+| "Where is the funnel leaking?" | "How good is this experience?" |
+
+### Vanity Metrics vs Actionable Metrics
+
+| Vanity Metric | Why It's Dangerous | Actionable Alternative |
+|---------------|-------------------|----------------------|
+| Total registered users | Only goes up, never down | DAU or MAU |
+| Page views | Inflated by bots, auto-refresh | Unique engaged users |
+| App downloads | Doesn't mean usage | Activated users (completed onboarding) |
+| Total revenue (cumulative) | Always increasing | Revenue per user, MoM growth rate |
+| Followers/likes | Doesn't correlate with business value | Engagement rate, conversion from followers |
+
+> **Critical Insight**: A vanity metric makes you feel good but doesn't inform decisions. An actionable metric changes your behavior — if it goes down, you know what to investigate and fix.
+
+**Interview test**: "If this metric doubles, would you change anything?" If no → it's a vanity metric.
+
+---
+
 ## Handling Metric Conflicts
 
 ### Common Conflict Patterns
