@@ -103,6 +103,15 @@
 | 59 | [Bayesian Decision-Making & Bandits](59-bayesian-decision-making-and-bandits.md) | Medium-High |
 | 60 | [Unit Economics & Business Case Analysis](60-unit-economics-and-business-case-analysis.md) | High |
 
+### Core Theory Deep Dives
+| # | Topic | Interview Weight |
+|---|-------|-----------------|
+| 61 | [Statistics & Probability Theory](61-statistics-and-probability-theory.md) | Very High |
+| 62 | [Time Series Forecasting](62-time-series-forecasting.md) | High |
+| 63 | [NLP & Text Analytics](63-nlp-and-text-analytics.md) | High |
+| 64 | [Deep Learning Fundamentals](64-deep-learning-fundamentals.md) | High |
+| 65 | [MLOps & Model Productionization](65-mlops-and-model-productionization.md) | Very High |
+
 ---
 
 ## How to Use This
